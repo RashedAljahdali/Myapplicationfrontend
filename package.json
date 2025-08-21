@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "mkdir dist && mkdir public && tsc && cp src/index.html dist &&cp dist/* public/",
+    "build": "mkdir -p dist public && tsc && cp src/index.html dist &&cp dist/* public/",
     "start": "npx serve public"
   },
   "keywords": [],

@@ -9,18 +9,18 @@ export const formStyle: React.CSSProperties = {
   boxShadow: "0 2px 8px rgba(0,0,0,0.1)",
   fontFamily: "Arial, sans-serif",
 };
-  export const wrapperStyle: React.CSSProperties = {
-    width: "30vw",
-    aspectRatio: "1 / 1",
-    overflow: "hidden",
-    borderRadius: "12px",
-  };
+export const wrapperStyle: React.CSSProperties = {
+  width: "30vw",
+  aspectRatio: "1 / 1",
+  overflow: "hidden",
+  borderRadius: "12px",
+};
 
-  export const imgStyle: React.CSSProperties = {
-    width: "100%",
-    height: "100%",
-    objectFit: "cover",
-  };
+export const imgStyle: React.CSSProperties = {
+  width: "100%",
+  height: "100%",
+  objectFit: "cover",
+};
 
 export const labelStyle: React.CSSProperties = {
   display: "block",
@@ -46,7 +46,6 @@ export const buttonStyle: React.CSSProperties = {
   borderRadius: "4px",
   cursor: "pointer",
   fontSize: "16px",
-margin : "20px auto",
-	display: "block",
+  margin: "20px auto",
+  display: "block",
 };
-

@@ -7,6 +7,6 @@ export interface Dashboredprobs{
 
 
 const Dashbored : React.FC<Dashboredprobs> =({Globalstatus , Setter}) => {	
-	return()
+	return(<></>)
 }
 export default Dashbored;

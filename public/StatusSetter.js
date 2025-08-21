@@ -5,7 +5,11 @@ export default function SetDefaultAppState() {
         Password: null,
         Done: null
     });
+    const [statusvideos, setStatusvideos] = useState({
+        State: null
+    });
     return {
-        Login: { status: statuslogin, setStatus: setStatusLogin }
+        Login: { status: statuslogin, setStatus: setStatusLogin },
+        videos: { status: statusvideos, setStatus: setStatusvideos }
     };
 }

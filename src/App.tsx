@@ -3,11 +3,11 @@ import React, { Component, SetStateAction, useEffect, useState } from 'react';
 import Login from './Login.js';
 import SetDefaultAppState , {Appstate} from './StatusSetter.js';
 import { Route, BrowserRouter, Routes } from 'react-router-dom';
-import Dashbored from './Dashbored.js';
+import Dashboard from './Dashboard.js';
 
 
 const App: React.FC = () => {
-const [Globalstate , setStatus] = useState<Appstate>(SetDefaultAppState())
+	const Globalstate : Appstate = SetDefaultAppState()
 	 return (
     <BrowserRouter>
       <Routes>
@@ -20,7 +20,7 @@ const [Globalstate , setStatus] = useState<Appstate>(SetDefaultAppState())
             />
           }
         />
-	<Route path="/dashboard" element={<Dashbored Globalstatus={Globalstate} Setter={setStatus}/>} />
+	<Route path="/dashboard" element={<Dashboard Globalstatus={Globalstate}/>} />
       </Routes>
     </BrowserRouter>
   );

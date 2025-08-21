@@ -54,7 +54,7 @@ fetch("http://localhost:8080/api/senduserdata",{
 }
 const navigate = useNavigate();
 useEffect(() => {
-    if (State.Done) {			
+    if (State.Done === true) {			
       navigate('/dashboard');
     }
   }, [State.Done, navigate]);

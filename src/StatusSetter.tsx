@@ -14,8 +14,8 @@ export interface Appstate {
 
 export default function SetDefaultAppState(): Appstate {
   const [statuslogin, setStatusLogin] = useState<Logininterface>({
-    Username: "",
-    Password: "",
+    Username: null,
+    Password: null,
     Done: null,
   });
   const [statusvideos, setStatusvideos] = useState<videoviews>({
